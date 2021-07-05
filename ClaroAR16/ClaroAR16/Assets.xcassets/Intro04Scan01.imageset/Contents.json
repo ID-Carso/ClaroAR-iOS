@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "apunta-hacia-tu-caja.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "apunta-hacia-tu-caja@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "apunta-hacia-tu-caja@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03191103260C76F500363E05 /* TutorialVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03191102260C76F500363E05 /* TutorialVideo.swift */; };
+		03191108260C78DF00363E05 /* VideoTutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03191107260C78DF00363E05 /* VideoTutorialView.swift */; };
+		031B1E232601754800B7339F /* ClaroAR16App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B1E222601754800B7339F /* ClaroAR16App.swift */; };
+		031B1E252601754800B7339F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B1E242601754800B7339F /* ContentView.swift */; };
+		031B1E272601754C00B7339F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 031B1E262601754C00B7339F /* Assets.xcassets */; };
+		031B1E2A2601754C00B7339F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 031B1E292601754C00B7339F /* Preview Assets.xcassets */; };
+		031B1E352601B62100B7339F /* GeneralIntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B1E342601B62100B7339F /* GeneralIntroductionView.swift */; };
+		031B1E392601B78D00B7339F /* GeneralTutorialScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B1E382601B78D00B7339F /* GeneralTutorialScanView.swift */; };
+		031B1E3C2601B94E00B7339F /* GeneralTutorialDiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B1E3B2601B94E00B7339F /* GeneralTutorialDiscoverView.swift */; };
+		031B1E3F2601BB4C00B7339F /* GeneralTutorialPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B1E3E2601BB4C00B7339F /* GeneralTutorialPlayView.swift */; };
+		031B1E422601BC7100B7339F /* GeneralTutorialStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B1E412601BC7100B7339F /* GeneralTutorialStartView.swift */; };
+		031B1E452601BD8400B7339F /* GeneralTutorialMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B1E442601BD8400B7339F /* GeneralTutorialMainView.swift */; };
+		031B1E492601DF1100B7339F /* AnimatedImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B1E482601DF1100B7339F /* AnimatedImagesView.swift */; };
+		031B1E4D2601E4B000B7339F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B1E4C2601E4B000B7339F /* LoadingView.swift */; };
+		0321F5732632611C009D02A7 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0321F5722632611C009D02A7 /* CircleView.swift */; };
+		035FFFB8260943DA0089C1D3 /* GeneralTutorialPlay02View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035FFFB7260943DA0089C1D3 /* GeneralTutorialPlay02View.swift */; };
+		035FFFBC260949AB0089C1D3 /* GeneralTutorialFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035FFFBB260949AB0089C1D3 /* GeneralTutorialFilterView.swift */; };
+		035FFFBF260949B90089C1D3 /* GeneralTutorialSaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035FFFBE260949B90089C1D3 /* GeneralTutorialSaleView.swift */; };
+		035FFFC226094D260089C1D3 /* GeneralHeaderTutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035FFFC126094D260089C1D3 /* GeneralHeaderTutorialView.swift */; };
+		035FFFDC26099C9E0089C1D3 /* LoadingFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035FFFDB26099C9E0089C1D3 /* LoadingFileView.swift */; };
+		03649AEB260D1A0800B958FF /* HelpVideoTutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03649AEA260D1A0800B958FF /* HelpVideoTutorialView.swift */; };
+		03649AEF260D1C2600B958FF /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03649AEE260D1C2600B958FF /* HelpView.swift */; };
+		03649AF2260D252E00B958FF /* SearchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03649AF1260D252E00B958FF /* SearchingView.swift */; };
+		036936392613B14D000FE5BB /* ARValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036936382613B14D000FE5BB /* ARValidator.swift */; };
+		037031DA2602844C000A2398 /* HelpTutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037031D92602844C000A2398 /* HelpTutorialView.swift */; };
+		037031DE26028BD0000A2398 /* SelectionBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037031DD26028BD0000A2398 /* SelectionBtnView.swift */; };
+		037031E32602907D000A2398 /* RealityFileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037031E22602907D000A2398 /* RealityFileModel.swift */; };
+		037031E72602923A000A2398 /* ARSelectionBtnsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037031E62602923A000A2398 /* ARSelectionBtnsView.swift */; };
+		037031EA2602BAD5000A2398 /* ARScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037031E92602BAD5000A2398 /* ARScoreView.swift */; };
+		037031ED2602BF24000A2398 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037031EC2602BF24000A2398 /* MainView.swift */; };
+		037031F32602DB05000A2398 /* ClaroGameAREntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037031F22602DB05000A2398 /* ClaroGameAREntity.swift */; };
+		037031F72602DB39000A2398 /* FileValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037031F62602DB39000A2398 /* FileValidator.swift */; };
+		037031FB2602DB5F000A2398 /* RealityFileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037031FA2602DB5F000A2398 /* RealityFileLoader.swift */; };
+		037031FF2602DB9B000A2398 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 037031FE2602DB9B000A2398 /* Alamofire */; };
+		037032022602DBA6000A2398 /* NetworkingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037032012602DBA6000A2398 /* NetworkingProvider.swift */; };
+		037032062602DBF0000A2398 /* SelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037032052602DBF0000A2398 /* SelectionViewModel.swift */; };
+		0370320A2602DC65000A2398 /* ClaroARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037032092602DC65000A2398 /* ClaroARViewContainer.swift */; };
+		0370320D2602EDB1000A2398 /* RealityFileDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370320C2602EDB1000A2398 /* RealityFileDataModel.swift */; };
+		0370321226032762000A2398 /* LinkBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370321126032762000A2398 /* LinkBtnView.swift */; };
+		03C4D2D3260479E100974A9B /* iActivityIndicator in Frameworks */ = {isa = PBXBuildFile; productRef = 03C4D2D2260479E100974A9B /* iActivityIndicator */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03191102260C76F500363E05 /* TutorialVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialVideo.swift; sourceTree = "<group>"; };
+		03191107260C78DF00363E05 /* VideoTutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTutorialView.swift; sourceTree = "<group>"; };
+		031B1E1F2601754800B7339F /* ClaroAR16.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClaroAR16.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		031B1E222601754800B7339F /* ClaroAR16App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaroAR16App.swift; sourceTree = "<group>"; };
+		031B1E242601754800B7339F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		031B1E262601754C00B7339F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		031B1E292601754C00B7339F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		031B1E2B2601754C00B7339F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		031B1E342601B62100B7339F /* GeneralIntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralIntroductionView.swift; sourceTree = "<group>"; };
+		031B1E382601B78D00B7339F /* GeneralTutorialScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTutorialScanView.swift; sourceTree = "<group>"; };
+		031B1E3B2601B94E00B7339F /* GeneralTutorialDiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTutorialDiscoverView.swift; sourceTree = "<group>"; };
+		031B1E3E2601BB4C00B7339F /* GeneralTutorialPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTutorialPlayView.swift; sourceTree = "<group>"; };
+		031B1E412601BC7100B7339F /* GeneralTutorialStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTutorialStartView.swift; sourceTree = "<group>"; };
+		031B1E442601BD8400B7339F /* GeneralTutorialMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTutorialMainView.swift; sourceTree = "<group>"; };
+		031B1E482601DF1100B7339F /* AnimatedImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedImagesView.swift; sourceTree = "<group>"; };
+		031B1E4C2601E4B000B7339F /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		0321F5722632611C009D02A7 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		035FFFB7260943DA0089C1D3 /* GeneralTutorialPlay02View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTutorialPlay02View.swift; sourceTree = "<group>"; };
+		035FFFBB260949AB0089C1D3 /* GeneralTutorialFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTutorialFilterView.swift; sourceTree = "<group>"; };
+		035FFFBE260949B90089C1D3 /* GeneralTutorialSaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTutorialSaleView.swift; sourceTree = "<group>"; };
+		035FFFC126094D260089C1D3 /* GeneralHeaderTutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralHeaderTutorialView.swift; sourceTree = "<group>"; };
+		035FFFDB26099C9E0089C1D3 /* LoadingFileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingFileView.swift; sourceTree = "<group>"; };
+		03649AEA260D1A0800B958FF /* HelpVideoTutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVideoTutorialView.swift; sourceTree = "<group>"; };
+		03649AEE260D1C2600B958FF /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		03649AF1260D252E00B958FF /* SearchingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingView.swift; sourceTree = "<group>"; };
+		036936382613B14D000FE5BB /* ARValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARValidator.swift; sourceTree = "<group>"; };
+		037031D92602844C000A2398 /* HelpTutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpTutorialView.swift; sourceTree = "<group>"; };
+		037031DD26028BD0000A2398 /* SelectionBtnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionBtnView.swift; sourceTree = "<group>"; };
+		037031E22602907D000A2398 /* RealityFileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealityFileModel.swift; sourceTree = "<group>"; };
+		037031E62602923A000A2398 /* ARSelectionBtnsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSelectionBtnsView.swift; sourceTree = "<group>"; };
+		037031E92602BAD5000A2398 /* ARScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARScoreView.swift; sourceTree = "<group>"; };
+		037031EC2602BF24000A2398 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		037031F22602DB05000A2398 /* ClaroGameAREntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaroGameAREntity.swift; sourceTree = "<group>"; };
+		037031F62602DB39000A2398 /* FileValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileValidator.swift; sourceTree = "<group>"; };
+		037031FA2602DB5F000A2398 /* RealityFileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealityFileLoader.swift; sourceTree = "<group>"; };
+		037032012602DBA6000A2398 /* NetworkingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProvider.swift; sourceTree = "<group>"; };
+		037032052602DBF0000A2398 /* SelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewModel.swift; sourceTree = "<group>"; };
+		037032092602DC65000A2398 /* ClaroARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaroARViewContainer.swift; sourceTree = "<group>"; };
+		0370320C2602EDB1000A2398 /* RealityFileDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealityFileDataModel.swift; sourceTree = "<group>"; };
+		0370321126032762000A2398 /* LinkBtnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkBtnView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		031B1E1C2601754800B7339F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				037031FF2602DB9B000A2398 /* Alamofire in Frameworks */,
+				03C4D2D3260479E100974A9B /* iActivityIndicator in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03191100260C76A400363E05 /* Instructions */ = {
+			isa = PBXGroup;
+			children = (
+				031B1E342601B62100B7339F /* GeneralIntroductionView.swift */,
+				031B1E382601B78D00B7339F /* GeneralTutorialScanView.swift */,
+				031B1E3B2601B94E00B7339F /* GeneralTutorialDiscoverView.swift */,
+				031B1E3E2601BB4C00B7339F /* GeneralTutorialPlayView.swift */,
+				035FFFB7260943DA0089C1D3 /* GeneralTutorialPlay02View.swift */,
+				031B1E412601BC7100B7339F /* GeneralTutorialStartView.swift */,
+				031B1E442601BD8400B7339F /* GeneralTutorialMainView.swift */,
+				035FFFBB260949AB0089C1D3 /* GeneralTutorialFilterView.swift */,
+				035FFFBE260949B90089C1D3 /* GeneralTutorialSaleView.swift */,
+				035FFFC126094D260089C1D3 /* GeneralHeaderTutorialView.swift */,
+			);
+			path = Instructions;
+			sourceTree = "<group>";
+		};
+		03191101260C76B700363E05 /* VideoInstructions */ = {
+			isa = PBXGroup;
+			children = (
+				03191102260C76F500363E05 /* TutorialVideo.swift */,
+				03191107260C78DF00363E05 /* VideoTutorialView.swift */,
+			);
+			path = VideoInstructions;
+			sourceTree = "<group>";
+		};
+		031B1E162601754800B7339F = {
+			isa = PBXGroup;
+			children = (
+				031B1E212601754800B7339F /* ClaroAR16 */,
+				031B1E202601754800B7339F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		031B1E202601754800B7339F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				031B1E1F2601754800B7339F /* ClaroAR16.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		031B1E212601754800B7339F /* ClaroAR16 */ = {
+			isa = PBXGroup;
+			children = (
+				037032042602DBC0000A2398 /* ViewModel */,
+				037031F52602DB2E000A2398 /* Services */,
+				037031E126028E22000A2398 /* Models */,
+				031B1E322601B5B700B7339F /* View */,
+				031B1E222601754800B7339F /* ClaroAR16App.swift */,
+				031B1E242601754800B7339F /* ContentView.swift */,
+				031B1E262601754C00B7339F /* Assets.xcassets */,
+				031B1E2B2601754C00B7339F /* Info.plist */,
+				031B1E282601754C00B7339F /* Preview Content */,
+			);
+			path = ClaroAR16;
+			sourceTree = "<group>";
+		};
+		031B1E282601754C00B7339F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				031B1E292601754C00B7339F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		031B1E322601B5B700B7339F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				03649AE9260D19E600B958FF /* Tutorial */,
+				037031DC26028A41000A2398 /* ARView */,
+				031B1E472601C9E500B7339F /* Loading */,
+				031B1E332601B5C000B7339F /* IntroductionInstructions */,
+				037031EC2602BF24000A2398 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		031B1E332601B5C000B7339F /* IntroductionInstructions */ = {
+			isa = PBXGroup;
+			children = (
+				03191101260C76B700363E05 /* VideoInstructions */,
+				03191100260C76A400363E05 /* Instructions */,
+			);
+			path = IntroductionInstructions;
+			sourceTree = "<group>";
+		};
+		031B1E472601C9E500B7339F /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				0321F5722632611C009D02A7 /* CircleView.swift */,
+				031B1E482601DF1100B7339F /* AnimatedImagesView.swift */,
+				031B1E4C2601E4B000B7339F /* LoadingView.swift */,
+				035FFFDB26099C9E0089C1D3 /* LoadingFileView.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		03649AE9260D19E600B958FF /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				037031D92602844C000A2398 /* HelpTutorialView.swift */,
+				03649AEA260D1A0800B958FF /* HelpVideoTutorialView.swift */,
+				03649AEE260D1C2600B958FF /* HelpView.swift */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
+		037031DC26028A41000A2398 /* ARView */ = {
+			isa = PBXGroup;
+			children = (
+				037031DD26028BD0000A2398 /* SelectionBtnView.swift */,
+				037031E62602923A000A2398 /* ARSelectionBtnsView.swift */,
+				037031E92602BAD5000A2398 /* ARScoreView.swift */,
+				037032092602DC65000A2398 /* ClaroARViewContainer.swift */,
+				0370321126032762000A2398 /* LinkBtnView.swift */,
+				03649AF1260D252E00B958FF /* SearchingView.swift */,
+			);
+			path = ARView;
+			sourceTree = "<group>";
+		};
+		037031E126028E22000A2398 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				037031E22602907D000A2398 /* RealityFileModel.swift */,
+				037031F22602DB05000A2398 /* ClaroGameAREntity.swift */,
+				0370320C2602EDB1000A2398 /* RealityFileDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		037031F52602DB2E000A2398 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				037031F62602DB39000A2398 /* FileValidator.swift */,
+				037031FA2602DB5F000A2398 /* RealityFileLoader.swift */,
+				037032012602DBA6000A2398 /* NetworkingProvider.swift */,
+				036936382613B14D000FE5BB /* ARValidator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		037032042602DBC0000A2398 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				037032052602DBF0000A2398 /* SelectionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		031B1E1E2601754800B7339F /* ClaroAR16 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 031B1E2E2601754C00B7339F /* Build configuration list for PBXNativeTarget "ClaroAR16" */;
+			buildPhases = (
+				031B1E1B2601754800B7339F /* Sources */,
+				031B1E1C2601754800B7339F /* Frameworks */,
+				031B1E1D2601754800B7339F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClaroAR16;
+			packageProductDependencies = (
+				037031FE2602DB9B000A2398 /* Alamofire */,
+				03C4D2D2260479E100974A9B /* iActivityIndicator */,
+			);
+			productName = ClaroAR16;
+			productReference = 031B1E1F2601754800B7339F /* ClaroAR16.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		031B1E172601754800B7339F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					031B1E1E2601754800B7339F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 031B1E1A2601754800B7339F /* Build configuration list for PBXProject "ClaroAR16" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 031B1E162601754800B7339F;
+			packageReferences = (
+				037031FD2602DB9B000A2398 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				03C4D2D1260479E100974A9B /* XCRemoteSwiftPackageReference "iActivityIndicator" */,
+			);
+			productRefGroup = 031B1E202601754800B7339F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				031B1E1E2601754800B7339F /* ClaroAR16 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		031B1E1D2601754800B7339F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				031B1E2A2601754C00B7339F /* Preview Assets.xcassets in Resources */,
+				031B1E272601754C00B7339F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		031B1E1B2601754800B7339F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0321F5732632611C009D02A7 /* CircleView.swift in Sources */,
+				03191103260C76F500363E05 /* TutorialVideo.swift in Sources */,
+				037031FB2602DB5F000A2398 /* RealityFileLoader.swift in Sources */,
+				035FFFDC26099C9E0089C1D3 /* LoadingFileView.swift in Sources */,
+				0370320D2602EDB1000A2398 /* RealityFileDataModel.swift in Sources */,
+				03649AF2260D252E00B958FF /* SearchingView.swift in Sources */,
+				03649AEB260D1A0800B958FF /* HelpVideoTutorialView.swift in Sources */,
+				037032062602DBF0000A2398 /* SelectionViewModel.swift in Sources */,
+				031B1E252601754800B7339F /* ContentView.swift in Sources */,
+				036936392613B14D000FE5BB /* ARValidator.swift in Sources */,
+				037031E72602923A000A2398 /* ARSelectionBtnsView.swift in Sources */,
+				037032022602DBA6000A2398 /* NetworkingProvider.swift in Sources */,
+				031B1E3F2601BB4C00B7339F /* GeneralTutorialPlayView.swift in Sources */,
+				031B1E452601BD8400B7339F /* GeneralTutorialMainView.swift in Sources */,
+				037031DE26028BD0000A2398 /* SelectionBtnView.swift in Sources */,
+				037031EA2602BAD5000A2398 /* ARScoreView.swift in Sources */,
+				035FFFB8260943DA0089C1D3 /* GeneralTutorialPlay02View.swift in Sources */,
+				031B1E4D2601E4B000B7339F /* LoadingView.swift in Sources */,
+				031B1E352601B62100B7339F /* GeneralIntroductionView.swift in Sources */,
+				035FFFC226094D260089C1D3 /* GeneralHeaderTutorialView.swift in Sources */,
+				031B1E3C2601B94E00B7339F /* GeneralTutorialDiscoverView.swift in Sources */,
+				0370321226032762000A2398 /* LinkBtnView.swift in Sources */,
+				031B1E492601DF1100B7339F /* AnimatedImagesView.swift in Sources */,
+				03191108260C78DF00363E05 /* VideoTutorialView.swift in Sources */,
+				0370320A2602DC65000A2398 /* ClaroARViewContainer.swift in Sources */,
+				03649AEF260D1C2600B958FF /* HelpView.swift in Sources */,
+				037031F72602DB39000A2398 /* FileValidator.swift in Sources */,
+				035FFFBF260949B90089C1D3 /* GeneralTutorialSaleView.swift in Sources */,
+				037031ED2602BF24000A2398 /* MainView.swift in Sources */,
+				031B1E392601B78D00B7339F /* GeneralTutorialScanView.swift in Sources */,
+				037031DA2602844C000A2398 /* HelpTutorialView.swift in Sources */,
+				037031F32602DB05000A2398 /* ClaroGameAREntity.swift in Sources */,
+				031B1E232601754800B7339F /* ClaroAR16App.swift in Sources */,
+				035FFFBC260949AB0089C1D3 /* GeneralTutorialFilterView.swift in Sources */,
+				037031E32602907D000A2398 /* RealityFileModel.swift in Sources */,
+				031B1E422601BC7100B7339F /* GeneralTutorialStartView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		031B1E2C2601754C00B7339F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		031B1E2D2601754C00B7339F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		031B1E2F2601754C00B7339F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_ASSET_PATHS = "\"ClaroAR16/Preview Content\"";
+				DEVELOPMENT_TEAM = 3S7KFX99HL;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ClaroAR16/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Digital.ClaroAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		031B1E302601754C00B7339F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_ASSET_PATHS = "\"ClaroAR16/Preview Content\"";
+				DEVELOPMENT_TEAM = 3S7KFX99HL;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ClaroAR16/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Digital.ClaroAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		031B1E1A2601754800B7339F /* Build configuration list for PBXProject "ClaroAR16" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031B1E2C2601754C00B7339F /* Debug */,
+				031B1E2D2601754C00B7339F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		031B1E2E2601754C00B7339F /* Build configuration list for PBXNativeTarget "ClaroAR16" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031B1E2F2601754C00B7339F /* Debug */,
+				031B1E302601754C00B7339F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		037031FD2602DB9B000A2398 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+		03C4D2D1260479E100974A9B /* XCRemoteSwiftPackageReference "iActivityIndicator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MojtabaHs/iActivityIndicator";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		037031FE2602DB9B000A2398 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 037031FD2602DB9B000A2398 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		03C4D2D2260479E100974A9B /* iActivityIndicator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03C4D2D1260479E100974A9B /* XCRemoteSwiftPackageReference "iActivityIndicator" */;
+			productName = iActivityIndicator;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 031B1E172601754800B7339F /* Project object */;
+}
