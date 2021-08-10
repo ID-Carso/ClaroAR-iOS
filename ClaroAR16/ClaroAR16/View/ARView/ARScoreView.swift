@@ -30,6 +30,7 @@ struct ARScoreView: View {
                 
                 Button(action: {
                     withAnimation(.easeOut){
+                        //dismiss(animated: true, completion: nil)
                         presentationMode.wrappedValue.dismiss()
                     }
               

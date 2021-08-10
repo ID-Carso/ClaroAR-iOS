@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isShowingSettings: Bool = false
+    
     var body: some View {
-        MainView()
+        VStack(){
+            Button(action: {
+                isShowingSettings = true
+            }, label: {
+                Image(systemName: "slider.horizontal.3")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 200, height: 200, alignment: .center)
+            })//: Button
+            .sheet(isPresented: $isShowingSettings, content: {
+                MainView()
+            })
+            
+        }
     }
 }
 

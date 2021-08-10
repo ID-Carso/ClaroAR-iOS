@@ -31,11 +31,14 @@ struct ClaroARViewContainer: UIViewRepresentable {
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
         //arView.debugOptions.insert(.showStatistics)
+        #if !targetEnvironment(simulator)
         let defaultScaleFactor = arView.contentScaleFactor
         arView.contentScaleFactor = 0.35 * defaultScaleFactor
         arView.renderOptions.insert(ARView.RenderOptions.disableDepthOfField)
         arView.renderOptions.insert(ARView.RenderOptions.disableAREnvironmentLighting)
         arView.renderOptions.insert(ARView.RenderOptions.disablePersonOcclusion)
+        #endif
+        
         return arView
     }
     
