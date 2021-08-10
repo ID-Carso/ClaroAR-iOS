@@ -16,6 +16,7 @@ import SwiftUI
 
 @available(iOS 13.0, *)
 struct ARScoreView: View {
+    @Environment(\.presentationMode) var presentationMode
     @Binding var Score: Int
     @Binding var CanShowHelp: Bool
     @Binding var SelectedType: TypeContent
@@ -29,7 +30,7 @@ struct ARScoreView: View {
                 
                 Button(action: {
                     withAnimation(.easeOut){
-                        
+                        presentationMode.wrappedValue.dismiss()
                     }
               
                 }){

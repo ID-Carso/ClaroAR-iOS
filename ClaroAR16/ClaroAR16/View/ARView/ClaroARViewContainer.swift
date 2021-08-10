@@ -33,11 +33,9 @@ struct ClaroARViewContainer: UIViewRepresentable {
         //arView.debugOptions.insert(.showStatistics)
         let defaultScaleFactor = arView.contentScaleFactor
         arView.contentScaleFactor = 0.35 * defaultScaleFactor
-        arView.renderOptions.insert(.disableDepthOfField)
-        arView.renderOptions.insert(.disableAREnvironmentLighting)
-        arView.renderOptions.insert(.disablePersonOcclusion)
-        //arView.renderOptions.insert(.disableFaceOcclusions)
-        //arView.renderOptions.insert(.disableMotionBlur)
+        arView.renderOptions.insert(ARView.RenderOptions.disableDepthOfField)
+        arView.renderOptions.insert(ARView.RenderOptions.disableAREnvironmentLighting)
+        arView.renderOptions.insert(ARView.RenderOptions.disablePersonOcclusion)
         return arView
     }
     
