@@ -16,11 +16,12 @@ import SwiftUI
 
 @available(iOS 13.0, *)
 struct ARScoreView: View {
-    @Environment(\.presentationMode) var presentationMode
+    //@Environment(\.presentationMode) var presentationMode
     @Binding var Score: Int
     @Binding var CanShowHelp: Bool
     @Binding var SelectedType: TypeContent
     @Binding var WillShowTutorial: Bool
+    var dismissAction: (() -> Void)
     var body: some View {
         ZStack(alignment: .top){
             Image("ARScoreBG").resizable()
@@ -28,13 +29,15 @@ struct ARScoreView: View {
                 .frame(maxWidth: .infinity, maxHeight: 168)
             HStack(){
                 
-                Button(action: {
-                    withAnimation(.easeOut){
-                        //dismiss(animated: true, completion: nil)
-                        presentationMode.wrappedValue.dismiss()
-                    }
-              
-                }){
+                Button(action: dismissAction/*
+                       {
+                           withAnimation(.easeOut){
+                               //presentationMode.wrappedValue.dismiss()
+                               //self.dis
+                           }
+                     
+                       }
+                       */){
                     Image("ARBackBtnD")
                         .resizable()
                             .scaledToFit()

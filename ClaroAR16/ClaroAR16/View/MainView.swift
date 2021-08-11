@@ -13,7 +13,7 @@ import SwiftUI
  */
 @available(iOS 13.0, *)
 struct MainView: View {
-    
+    var dismissAction: (() -> Void)
     @ObservedObject var selectionViewModel: SelectionViewModel = SelectionViewModel()
     
     var body: some View {
@@ -29,10 +29,10 @@ struct MainView: View {
                 
                 
                 
-            ARScoreView(Score: $selectionViewModel.Score, CanShowHelp: $selectionViewModel.CanShowHelp, SelectedType: $selectionViewModel.SelectedType, WillShowTutorial: $selectionViewModel.WillShowTutorial).frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+            ARScoreView(Score: $selectionViewModel.Score, CanShowHelp: $selectionViewModel.CanShowHelp, SelectedType: $selectionViewModel.SelectedType, WillShowTutorial: $selectionViewModel.WillShowTutorial, dismissAction: dismissAction).frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             
             if selectionViewModel.WillShowTutorial && selectionViewModel.hasFinishedLoadingData{
-                VideoTutorialView(WillShowTutorial: $selectionViewModel.WillShowTutorial, videoLink: (selectionViewModel.ArEntities[.Video]?.ContentLink)!)
+                VideoTutorialView(WillShowTutorial: $selectionViewModel.WillShowTutorial, dismissAction: dismissAction, videoLink: (selectionViewModel.ArEntities[.Video]?.ContentLink)!)
             }
              
             
@@ -55,9 +55,4 @@ struct MainView: View {
         }
     }
 }
-@available(iOS 13.0, *)
-struct MainView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView()
-    }
-}
+

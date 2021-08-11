@@ -21,7 +21,8 @@ struct ContentView: View {
                     .frame(width: 200, height: 200, alignment: .center)
             })//: Button
             .sheet(isPresented: $isShowingSettings, content: {
-                MainView()
+                EmptyView()
+                //MainView()
             })
             
         }

@@ -14,6 +14,8 @@ struct VideoTutorialView: View {
     @State var hasFinishedVideo: Bool = false
     @State var NextHasBeenPressed: Bool = false
     @Binding var  WillShowTutorial: Bool
+    //@Environment(\.presentationMode) var presentationMode
+    var dismissAction: (() -> Void)
     var videoLink: String 
     
     
@@ -26,12 +28,15 @@ struct VideoTutorialView: View {
                 HStack(){}.frame(maxWidth: .infinity, maxHeight: .infinity).background(Color.black)
                 TutorialVideo(hasFinishedVideo: $hasFinishedVideo, player: PlayerUIView(frame: .zero, url: URL(string: videoLink)!))
                 HStack(){
-                    Button(action: {
-                        withAnimation(.easeOut){
-                            
-                        }
-                  
-                    }){
+                    Button(action: dismissAction/*
+                     {
+                         withAnimation(.easeOut){
+                             //presentationMode.wrappedValue.dismiss()
+                             //self.dis
+                         }
+                   
+                     }
+                     */){
                         Image("Intro08Header01")
                             .resizable()
                                 .scaledToFit()
