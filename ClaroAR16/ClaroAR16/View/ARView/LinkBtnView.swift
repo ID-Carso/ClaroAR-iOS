@@ -60,10 +60,12 @@ struct LinkBtnView: View {
 extension LinkBtnView{
     func OpenURL(url: String)
     {
-        guard let url = URL(string: url) else {
+        guard let url = URL(string: "csclarora://" + url) else {
              return
         }
-
+        
+        
+        
         if UIApplication.shared.canOpenURL(url) {
              UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
