@@ -73,6 +73,7 @@ struct ClaroARViewContainer: UIViewRepresentable {
                                         claroGame.actions.claroShopGameOver.onAction = handleGameOver(_:)
                                         claroGame.actions.claroShopGameNextLevel.onAction = handleNextLevel(_:)
                                         claroGame.actions.claroShopGameInstace.onAction = handleHasInstance(_:)
+                                        claroGame.generateCollisionShapes(recursive: true)
                                         claroGame.synchronization = nil
                                         self.ActiveEntity = claroGame
                                         uiView.scene.anchors.append(claroGame)
