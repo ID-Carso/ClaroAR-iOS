@@ -25,7 +25,7 @@ struct MainView: View {
                 SearchingView().frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
             }
             
-            ARSelectionBtnsView(SelectedType: $selectionViewModel.SelectedType, HasChooseType: $selectionViewModel.HasSelectedItem, ArEntities: $selectionViewModel.ArEntities, hasFinishedLoadingFile: $selectionViewModel.hasFinishedLoadingFile, hasFinishedShowFile: $selectionViewModel.hasFinishedShowFile, CanShowHelp: $selectionViewModel.CanShowHelp).frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+            ARSelectionBtnsView(SelectedType: $selectionViewModel.SelectedType, HasChooseType: $selectionViewModel.HasSelectedItem, ArEntities: $selectionViewModel.ArEntities, hasFinishedLoadingFile: $selectionViewModel.hasFinishedLoadingFile, hasFinishedShowFile: $selectionViewModel.hasFinishedShowFile, CanShowHelp: $selectionViewModel.CanShowHelp, dismissAction: dismissAction).frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
                 
                 
                 

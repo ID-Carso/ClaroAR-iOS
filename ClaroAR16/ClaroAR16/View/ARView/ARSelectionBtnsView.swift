@@ -17,7 +17,7 @@ struct ARSelectionBtnsView: View {
     @Binding var hasFinishedLoadingFile: Bool
     @Binding var hasFinishedShowFile: Bool
     @Binding var CanShowHelp: Bool
-
+    var dismissAction: (() -> Void)
     
     var body: some View {
         ZStack(alignment: .center){
@@ -31,9 +31,9 @@ struct ARSelectionBtnsView: View {
                     
                 SelectionBtnView(SelectedType: self.$SelectedType, HasChooseType: self.$HasChooseType, ArEntities: $ArEntities, hasFinishedLoadingFile: self.$hasFinishedLoadingFile, hasFinishedShowFile: self.$hasFinishedShowFile, CanShowHelp: self.$CanShowHelp, ActiveImageBtn: "ARActive", InactiveImageBtn: "ARScan", SelectionType: TypeContent.Escanear, WidthBtn: 65, WidthCircle: 60, VerticalPadding: -3).frame(alignment: .top)
                 
-                LinkBtnView(SelectedType: self.$SelectedType, ArEntities: self.$ArEntities, HasChooseType: self.$HasChooseType, hasFinishedLoadingFile: self.$hasFinishedLoadingFile, hasFinishedShowFile: self.$hasFinishedShowFile, ActiveImageBtn: "ARActive", InactiveImageBtn: "ARSale-1", SelectionType: TypeContent.Ofertas, WidthBtn: 50, WidthCircle: 55, VerticalPadding: 5)
+                LinkBtnView(SelectedType: self.$SelectedType, ArEntities: self.$ArEntities, HasChooseType: self.$HasChooseType, hasFinishedLoadingFile: self.$hasFinishedLoadingFile, hasFinishedShowFile: self.$hasFinishedShowFile, ActiveImageBtn: "ARActive", InactiveImageBtn: "ARSale-1", SelectionType: TypeContent.Ofertas, WidthBtn: 50, WidthCircle: 55, VerticalPadding: 5, dismissAction: dismissAction, isSocial: false)
                 
-                LinkBtnView(SelectedType: self.$SelectedType, ArEntities: self.$ArEntities, HasChooseType: self.$HasChooseType, hasFinishedLoadingFile: self.$hasFinishedLoadingFile, hasFinishedShowFile: self.$hasFinishedShowFile, ActiveImageBtn: "ARActive", InactiveImageBtn: "ARFilters", SelectionType: .Filtros, WidthBtn: 45, WidthCircle: 60, VerticalPadding: 5)
+                LinkBtnView(SelectedType: self.$SelectedType, ArEntities: self.$ArEntities, HasChooseType: self.$HasChooseType, hasFinishedLoadingFile: self.$hasFinishedLoadingFile, hasFinishedShowFile: self.$hasFinishedShowFile, ActiveImageBtn: "ARActive", InactiveImageBtn: "ARFilters", SelectionType: .Filtros, WidthBtn: 45, WidthCircle: 60, VerticalPadding: 5, dismissAction: dismissAction, isSocial: true)
                 
             }
             .frame(maxWidth: .infinity)

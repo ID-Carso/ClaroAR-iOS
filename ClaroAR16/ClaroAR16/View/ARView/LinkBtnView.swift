@@ -22,6 +22,8 @@ struct LinkBtnView: View {
     var WidthBtn: CGFloat
     var WidthCircle: CGFloat
     var VerticalPadding : CGFloat
+    var dismissAction: (() -> Void)
+    var isSocial: Bool
     
     var body: some View {
         Button(action: {
@@ -60,7 +62,14 @@ struct LinkBtnView: View {
 extension LinkBtnView{
     func OpenURL(url: String)
     {
-        guard let url = URL(string: "csclarora://" + url) else {
+        var finalUrl = url;
+        
+        if(!isSocial)
+        {
+            finalUrl = "csclarora://" + url
+        }
+        
+        guard let url = URL(string: finalUrl) else {
              return
         }
         
@@ -68,6 +77,11 @@ extension LinkBtnView{
         
         if UIApplication.shared.canOpenURL(url) {
              UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+        
+        if(!isSocial)
+        {
+            dismissAction()
         }
     }
 }
