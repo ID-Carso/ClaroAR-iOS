@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "acompa-anos.png",
+      "filename" : "acomp-anos.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "acompa-anos@2x.png",
+      "filename" : "acomp-anos@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "acompa-anos@3x.png",
+      "filename" : "acomp-anos@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

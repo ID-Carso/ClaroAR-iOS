@@ -28,10 +28,10 @@ struct GeneralIntroductionView: View {
     }
 }
 
-/*
+@available(iOS 13.0, *)
  struct GeneralIntroductionView_Previews: PreviewProvider {
      static var previews: some View {
          GeneralIntroductionView()
      }
  }
-*/
+

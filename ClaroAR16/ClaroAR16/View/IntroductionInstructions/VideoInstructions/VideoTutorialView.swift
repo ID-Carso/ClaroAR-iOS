@@ -37,7 +37,7 @@ struct VideoTutorialView: View {
                    
                      }
                      */){
-                        Image("Intro08Header01")
+                        Image("ARBackBtnD")
                             .resizable()
                                 .scaledToFit()
                                 .frame(width: 32.0)
