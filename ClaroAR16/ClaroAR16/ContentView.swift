@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var isShowingSettings: Bool = false
-    
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
         VStack(){
             Button(action: {
@@ -21,11 +21,16 @@ struct ContentView: View {
                     .frame(width: 200, height: 200, alignment: .center)
             })//: Button
             .sheet(isPresented: $isShowingSettings, content: {
-                EmptyView()
+                MainView(dismissAction: dimiss)
                 //MainView()
             })
             
         }
+    }
+    
+    func dimiss()
+    {
+        presentationMode.wrappedValue.dismiss()
     }
 }
 

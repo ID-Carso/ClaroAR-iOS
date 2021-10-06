@@ -33,7 +33,7 @@ struct ClaroARViewContainer: UIViewRepresentable {
         //arView.debugOptions.insert(.showStatistics)
         #if !targetEnvironment(simulator)
         let defaultScaleFactor = arView.contentScaleFactor
-        arView.contentScaleFactor = 0.35 * defaultScaleFactor
+        arView.contentScaleFactor = 0.4 * defaultScaleFactor
         arView.renderOptions.insert(ARView.RenderOptions.disableDepthOfField)
         arView.renderOptions.insert(ARView.RenderOptions.disableAREnvironmentLighting)
         arView.renderOptions.insert(ARView.RenderOptions.disablePersonOcclusion)
@@ -45,14 +45,16 @@ struct ClaroARViewContainer: UIViewRepresentable {
     func updateUIView(_ uiView: ARView, context: Context)
     {
         if self.SelectedType == .Filtros || self.SelectedType == .Ofertas{
-            DeleteAnchor()
+            uiView.scene.anchors.removeAll()
+            //DeleteAnchor()
         }
         else{
             
             if (self.HasSelectedItem && self.hasFinishedLoadingFile) && !CanShowHelp {
                 DispatchQueue.main.async {
                     self.hasFinishedLoadingFile = false
-                    DeleteAnchor()
+                    uiView.scene.anchors.removeAll()
+                    //DeleteAnchor()
                     if let realityFile = ArEntities[self.SelectedType]{
                         do{
                             switch self.SelectedType {
@@ -73,8 +75,8 @@ struct ClaroARViewContainer: UIViewRepresentable {
                                         claroGame.actions.claroShopGameOver.onAction = handleGameOver(_:)
                                         claroGame.actions.claroShopGameNextLevel.onAction = handleNextLevel(_:)
                                         claroGame.actions.claroShopGameInstace.onAction = handleHasInstance(_:)
-                                        claroGame.generateCollisionShapes(recursive: true)
-                                        claroGame.synchronization = nil
+                                        claroGame.generateCollisionShapes(recursive: false)
+                                        //claroGame.synchronization = nil
                                         self.ActiveEntity = claroGame
                                         uiView.scene.anchors.append(claroGame)
                                         //sleep(1)
@@ -170,6 +172,7 @@ struct ClaroARViewContainer: UIViewRepresentable {
 @available(iOS 13.0, *)
 extension ClaroARViewContainer{
     func DeleteAnchor(){
+        
         if let pastModel = self.ActiveEntity{
             if let anchorEntity = pastModel.anchor{
                 anchorEntity.removeFromParent()

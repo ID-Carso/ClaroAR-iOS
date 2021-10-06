@@ -29,10 +29,12 @@ public class RealityFileLoader{
          
          guard let realityFileSceneURL = createRealityURL(filePath: filePath, sceneName: sceneName) else {
              print("Error: Unable to find specified file in application bundle")
+            
+            
              return
          }
          
-         let loadRequest = Entity.loadAnchorAsync(contentsOf: realityFileSceneURL)
+         let loadRequest =  Entity.loadAnchorAsync(contentsOf: realityFileSceneURL)
          let cancellable = loadRequest.sink(receiveCompletion: { (loadCompletion) in
              if case let .failure(error) = loadCompletion {
                  completion(.failure(error))
